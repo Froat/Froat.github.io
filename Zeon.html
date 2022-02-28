@@ -146,14 +146,17 @@ document.getElementById('uploadf').style.display = "none"; document.getElementBy
                     script.innerHTML = "EJS_player = '#game'; EJS_gameName = '" + gameName + "'; EJS_biosUrl = ''; EJS_gameUrl = '" + gameUrl + "'; EJS_core = '" + core + "'; EJS_pathtodata = 'https://rawcdn.githack.com/ethanaobrien/emulatorjs/main/data/';";
                     document.body.appendChild(script);
                     var script = document.createElement('script');
-                    script.src = 'LOADER.JS';
+                    script.src = 'loader.js';
                     document.body.appendChild(script);
                 }
             })
         </script>
+		 <center id="cont">
+		 <img id="uploadf1" class="eimg" src="docs/Emulatorjs Logo.png">
+			 </center>
 		 <div id="uploadf" class="form">
 		 <input type="file" id="file">
-  <b><p>Drag Game Rom Here Or Click to Insert Rom.</p></b>
+  <b><p>Select Game Rom: Drag your files here or click in this area.</p></b>
 			 </div>
     </body>
 </html>
